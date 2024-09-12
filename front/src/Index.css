@@ -1,0 +1,267 @@
+body{
+  margin:0px;
+  padding:0px;
+  display:flex;
+  min-height:100vh;
+  flex-wrap:wrap;
+  }
+
+
+
+.home{
+  margin-bottom: 0px; 
+}
+
+
+.cards{
+  display: grid;
+  margin-top: 10px;
+  margin-bottom: 10px;   
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;   
+  
+}
+
+.Card{
+   width: 20rem;
+   padding:5px;
+   border: 2px solid #ccc;
+   border-radius: 10px;
+}
+.CardTitle1{
+  font-size: 18px;
+  color:#ff6b6b;
+  font-weight: bold;
+  }
+.card-text{
+  border-color: red;
+}
+.imagenCard{
+  width: 300px;
+  border-radius: 10px;
+}
+
+.precio{
+  /*border: 2px solid red;*/
+  gap:0px
+}
+.d-flex.justify-content-between {
+  margin-top: 20px;
+}
+
+.btn-primary{
+  font-size: 12px;
+  color: white;
+  width: 100px;
+  background-color: #343a40;
+  border-color: black;
+  border-radius: 5px;
+  padding: 1px 1px 1px 1px;
+}
+.btn-primary:hover {
+  background-color: green; /* Cambia el color de fondo al pasar el cursor por encima */
+}
+.btn-secondary{
+  font-size: 12px;
+  color: black;
+  width: 100px;
+  background-color: white;
+  border-color: black;
+  border-radius: 5px;
+  padding: 1px 1px 1px 1px;
+  margin-right: 10px;
+}
+.btn-secondary:hover {
+  background-color: #007bff; /* Cambia el color de fondo al pasar el cursor por encima */
+}
+.card-text p{
+  color: black;
+  font-size: 16px;
+  justify-content: center;
+}
+.card-text ul{
+   list-style: square;
+   font-size: 0.9rem;
+  line-height: 1.2;
+  /* align-self: start; */
+  color: black;  
+  
+  /*list-style-type: none;*/
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  margin-left: 130px; /* Agrega este margen izquierdo */
+}
+
+
+
+.footer {
+  width: 100%; /* Ancho del 100% del contenedor */
+  height: 50px; /* Altura de 50 píxeles */
+  background-color: #363b3f; /* Color de fondo gris claro */
+  color: white; /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  line-height: 50px; /* Altura de línea igual a la altura del div */
+  font-size: 14px; /* Tamaño de fuente de 14 píxeles */
+  align-self: flex-end;
+}
+
+.botonHome-btn {
+  background-color: #363b3f; /* Fondo verde */
+  border: 1px solid white; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espacio interno */
+  height: fit-content;
+  width: fit-content;
+  text-align: center; /* Centrar texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+}
+
+.botonHome-btn:hover {
+  background-color: gray; /* Cambiar color de fondo al pasar el cursor */
+  border: 1px solid white;
+}
+
+.botonProfile-btn {
+  background-color: #363b3f; /* Fondo verde */
+  border: 1px solid white; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espacio interno */
+  height: fit-content;
+  width: 110px;
+  text-align: center; /* Centrar texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+}
+
+.botonProfile-btn:hover {
+  background-color: gray; /* Cambiar color de fondo al pasar el cursor */
+  border: 1px solid white;
+}
+.botonLogout-btn {
+  background-color: #363b3f; /* Fondo verde */
+  border: 1px solid white; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espacio interno */
+  height: fit-content;
+  width: 115px;
+  text-align: center; /* Centrar texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+}
+
+.botonLogout-btn:hover {
+  background-color: gray; /* Cambiar color de fondo al pasar el cursor */
+  border: 1px solid white;
+}
+.botonLogin-btn {
+  background-color: #363b3f; /* Fondo verde */
+  border: 1px solid white; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espacio interno */
+  height: fit-content;
+  width: 110px;
+  text-align: center; /* Centrar texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+}
+
+.botonLogin-btn:hover {
+  background-color: gray; /* Cambiar color de fondo al pasar el cursor */
+  border: 1px solid white;
+}
+.botonRegister-btn {
+  background-color: #363b3f; /* Fondo verde */
+  border: 1px solid white; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espacio interno */
+  height: fit-content;
+  width: 125px;
+  text-align: center; /* Centrar texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+  margin-right: 10px;
+}
+
+
+.botonRegister-btn:hover {
+  background-color: gray; /* Cambiar color de fondo al pasar el cursor */
+  border: 1px solid white;
+}
+.botonTotal-btn {
+  background-color: #363b3f; /* Fondo verde */
+  border: 1px solid #16a4c7 ; /* Sin borde */
+  color: #16a4c7 ; /* Texto blanco */
+  padding: 10px 20px; /* Espacio interno */
+  height: fit-content;
+  width: 165px;
+  text-align: center; /* Centrar texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+  
+}
+
+.botonTotal-btn:hover {
+  background-color: gray; /* Cambiar color de fondo al pasar el cursor */
+  border: 1px solid #16a4c7;
+  color:white;
+}
+.perfil-container{
+  border-color:2px #343a40;
+  font-size: large;
+  margin-bottom:10px ;
+}
+
+/*componente cart*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1rem;
+}
+
+.row > .col {
+  flex: 0 0 auto;
+  width: 33.3333%;
+  padding: 1rem;
+}
+
+.col {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .row > .col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .row > .col {
+    width: 100%;
+  }
+}

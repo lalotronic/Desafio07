@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           
-          {/* Implementa la ruta protegida para "/profile". Si el token es false, redirige a "/login".
+          {/* 5.Implementa la ruta protegida para "/profile". Si el token es false, redirige a "/login".
               Además, si el token es true, los usuarios no deberían poder acceder a la página de
               login y register (los puedes redirigir al home que es "/""). */}
           <Route path="/register" element={token ? <Navigate to="/" /> : <Registro />} />

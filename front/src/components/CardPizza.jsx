@@ -4,10 +4,15 @@ import Card from 'react-bootstrap/Card';
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import { ProductContext } from '../context/ProductContext';
+import { useNavigate } from 'react-router-dom';
 
 function CardPizza({ pizzaId }) {
   const { addToCart } = useContext(CartContext);
   const { pizzas } = useContext(ProductContext);
+  const navigate = useNavigate(pizzaId);
+  const handleClick=(pizzaId) => {
+    navigate("/pizza/"+pizzaId)
+  };
 
   // Buscamos la pizza específica por ID
   const pizza = pizzas.find(p => p.id === pizzaId);
@@ -32,7 +37,9 @@ function CardPizza({ pizzaId }) {
         <div className='precio'>
           <Card.Title className="CardTitle1">Precio: ${pizza.price}</Card.Title>
           <div className="d-flex justify-content-between"> 
-            <Button variant="secondary">Ver más &#x1F440;</Button>
+            <Button variant="secondary"onClick={() => {
+              handleClick(pizzaId);
+            }}>Ver más &#x1F440;</Button>
             <Button variant="primary" onClick={() => {
               addToCart(pizza);
             }}>Añadir &#x1F6D2;</Button>

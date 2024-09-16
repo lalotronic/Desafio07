@@ -6,11 +6,13 @@ import Button from "react-bootstrap/Button";
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom"; // 1)se importa useParams
 import { ProductContext } from "../context/ProductContext";
+import { CartContext } from '../context/CartContext';
 
 const Pizza = () => {
   const { id } = useParams();
   const { pizzas } = useContext(ProductContext);
   const [pizza, setPizza] = useState(null);
+  const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     const foundPizza = pizzas.find(p => p.id === (id));
@@ -38,9 +40,11 @@ const Pizza = () => {
         </ul>
         <div className='precio'>
           <Card.Title className="CardTitle1" style={{ fontSize: '1.2rem', color: '#000' }}>Precio: ${pizza.price}</Card.Title>
-          <div className="d-flex justify-content-between">
-            <Button variant="secondary">Ver más &#x1F440;</Button>
-            <Button variant="primary">Añadir &#x1F6D2;</Button>
+          <div className="d-flex justify-content-center">
+            {/* <Button variant="secondary">Ver más++ &#x1F440;</Button> */}
+            <Button variant="primary" onClick={() => {
+              addToCart(pizza);
+            }}>Añadir &#x1F6D2;</Button>
           </div>
         </div>
       </Card.Body>
